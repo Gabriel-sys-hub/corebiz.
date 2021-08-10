@@ -4,6 +4,8 @@ import Carousel from 'react-elastic-carousel';
 
 import styles from './style.module.scss';
 
+import bannerImage from '../../images/Banner.png';
+
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 550, itemsToShow: 1 },
@@ -23,7 +25,7 @@ export function Hero() {
                   Criar ou migrar seu e-commerce?
                 </p>
             </h1>
-            <img src="/images/Banner.png" alt="banner" />
+            <img src={ bannerImage } alt="banner" />
           </div>
           <div className={ styles.carousel__card }>
             <h1 className={ styles.banner__tittle }>

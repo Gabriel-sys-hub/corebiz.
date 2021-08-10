@@ -59,7 +59,7 @@ export function CarouselItem() {
     return (
       <Carousel breakPoints={breakPoints}>
         {cartList.map((item) => (
-          <div className="carousel-card">{item} </div>
+          <div> {item} </div>
         ))}
       </Carousel>
     );

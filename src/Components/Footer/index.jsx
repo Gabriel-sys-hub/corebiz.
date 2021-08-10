@@ -1,5 +1,8 @@
 import React from "react";
 
+import emailImg from '../../images/email.svg';
+import phone from '../../images/phone.svg';
+
 import styles from "./style.module.scss";
 
 export function Footer() {
@@ -16,12 +19,12 @@ export function Footer() {
         </div>
         <div className={styles.contact__btn__container}>
           <button className={ styles.email__btn } type="button">
-            <img src="/public/images/email.svg" alt="email" />
+            <img src={ emailImg } alt="email" />
 
             <p>ENTRAR EM CONTATO</p>
           </button>
           <button className={ styles.contact__btn }  type="button">
-            <img src="/images/phone.svg" alt="phone" />
+            <img src={ phone } alt="phone" />
             <p>FALE COM O CONSULTOR ONLINE</p>
           </button>
         </div>

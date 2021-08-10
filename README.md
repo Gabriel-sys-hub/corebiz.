@@ -11,14 +11,21 @@
 ![Captura de tela de 2021-08-10 17-49-09](https://user-images.githubusercontent.com/77814658/128933154-afc5f565-8359-44b0-9de5-ff96873d444d.png)
 ---
 
-# Tecnologias Utilizadas
+### 🛠 Tecnologias
 
-- ReactJS ( npx create-react-app )
+- [React](https://pt-br.reactjs.org/)
 - ContextAPI
-- React Elastic Carousel
+- [React Elastic Carousel](https://www.npmjs.com/package/react-elastic-carousel)
 - Fetch ( Requisição de API )
-- SCSS ( Sass - Arquivos Module )
+- [SASS](https://sass-lang.com/)
 
+---
+
+### Features
+
+- [x] Validação de email e nome
+- [x] Adicionar itens ao carrinho de compras
+- [x] Requisição de API de produtos
 ---
 
 # Organização do SCSS
@@ -29,12 +36,28 @@
 ---
 
 
-# Observações técnicas
+### Pré-requisitos
 
- - O projeto foi iniciado com `npx create-react-app`
- - Utilizei o `npm` para gerenciar os pacotes
- - Para instalar as dependências basta utilizar o comando `npm i`
- - Utilize o comando `npm start` para visualizar o projeto no navegador pela porta 3000.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### 🎲 Rodando
+
+```bash
+# Clone este repositório
+$ git clone git@github.com:Gabriel-sys-hub/corebiz..git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd corebiz
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação
+$ npm start
+
+```
 ---
 #  Missão
 
@@ -58,3 +81,8 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 -  Ao clicar em enviar com os campos validados, o form precisa ser disparado via javascript para a API de newsletter seguindo as especificações da API.
 
 ---
+
+### Implementações ainda não completas
+
+- Rater (Parte onde fica as estrelas de cada item), tive um problema com a biblioteca e ainda não consegui resolver
+  

@@ -9,9 +9,9 @@ import './index.css'; // CSS GLOBAL
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename="/MyPortifolio"></Router>
+    <Router basename="/MyPortifolio">
       <App />
-    <Router />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

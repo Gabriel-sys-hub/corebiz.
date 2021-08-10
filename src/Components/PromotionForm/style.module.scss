@@ -1,0 +1,121 @@
+.form__checked__container {
+  align-items: center;
+  background-color: var(--background-footer);
+  display: flex;
+  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .succes__main__msg {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .succes__detail__msg {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .promotion__btn {
+    background-color: var(--black);
+    border-radius: 5px;
+    color: var(--white);
+    margin-top: 20px;
+    border: none;
+    width: 20%;
+    padding: 15px;
+  }
+}
+
+.form__unchecked__container {
+  align-items: center;
+  background-color: var(--background-footer);
+  display: flex;
+  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .promotion__form {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .promotion__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .promotion__input {
+    border: none;
+    border-radius: 5px;
+    width: 15%;
+    margin: 0px 20px;
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .promotion__btn {
+    background-color: var(--black);
+    border-radius: 5px;
+    color: var(--white);
+    margin-top: 20px;
+    border: none;
+    width: 20%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 728px) {
+
+  .form__unchecked__container {
+    align-items: center;
+    background-color: var(--background-footer);
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+    .promotion__title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  
+    .promotion__form {
+      align-items: center;
+      border-radius: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    
+      .promotion__input {
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+        padding: 15px;
+      }
+    
+      .promotion__btn {
+        background-color: var(--black);
+        border-radius: 5px;
+        color: var(--white);
+        margin-top: 20px;
+        border: none;
+        width: 100%;
+        padding: 15px;
+      }
+    }
+  }
+}

@@ -1,7 +1,31 @@
 .rec-arrow-right {
+  display: inline;
+}
+
+.rec-dot {
   display: none;
 }
 
 .rec-arrow-left {
-  display: none;
+  display: inline;
+}
+
+@media (max-width: 728px) {
+  .rec-arrow-right {
+    display: none;
+  }
+  
+  .rec-arrow-left {
+    display: none;
+  }
+
+  .rec-dot {
+    display: inline;
+    background-color: var(--red-900) !important;
+  }
+
+  .ejXxNI:hover, .ejXxNI:focus {
+    box-shadow: 0 0 1px 2px var(--white) !important;
+    background-color: var(--white) !important;
+  }
 }

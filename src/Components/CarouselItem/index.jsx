@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import UserContext from "../../Context/UserContext";
 
+import './style.css';
+
 import Carousel from "react-elastic-carousel";
 
 import styles from './style.module.scss';

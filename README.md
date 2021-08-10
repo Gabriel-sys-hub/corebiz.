@@ -1,3 +1,16 @@
+# Corebiz. Layout
+
+![Captura de tela de 2021-08-10 17-48-00](https://user-images.githubusercontent.com/77814658/128933142-2f221028-17e5-4597-ae54-f5a57bf8cc21.png)
+---
+![Captura de tela de 2021-08-10 17-48-29](https://user-images.githubusercontent.com/77814658/128933147-f09e7129-72e0-4028-b3a5-24a3d681dba2.png)
+---
+![Captura de tela de 2021-08-10 17-48-41](https://user-images.githubusercontent.com/77814658/128933150-bad75428-e9bb-4678-91a0-75b043beaab7.png)
+---
+![Captura de tela de 2021-08-10 17-48-58](https://user-images.githubusercontent.com/77814658/128933151-7ab7be5f-3fe7-44c5-b243-7063f88a603c.png)
+---
+![Captura de tela de 2021-08-10 17-49-09](https://user-images.githubusercontent.com/77814658/128933154-afc5f565-8359-44b0-9de5-ff96873d444d.png)
+---
+
 # Tecnologias Utilizadas
 
 - ReactJS ( npx create-react-app )

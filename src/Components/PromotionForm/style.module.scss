@@ -74,6 +74,39 @@
 
 @media (max-width: 728px) {
 
+  .form__checked__container {
+    align-items: center;
+    background-color: var(--background-footer);
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  
+    .succes__main__msg {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  
+    .succes__detail__msg {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  
+    .promotion__btn {
+      background-color: var(--black);
+      border-radius: 5px;
+      color: var(--white);
+      margin-top: 20px;
+      border: none;
+      width: 100%;
+      padding: 15px;
+    }
+  }
+
   .form__unchecked__container {
     align-items: center;
     background-color: var(--background-footer);

@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
+  color: var(--black);
 }
 
 a, ul, li {
@@ -12,7 +13,14 @@ a, ul, li {
   list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --white: #FFF;
+  --background-color: #E5E5E5;
+
+  --black: #000000;
+
+  --red--900:  #F8475F;
+  
+  --gray-200: #7A7A7A;
+  --gray-700: #333333;
 }

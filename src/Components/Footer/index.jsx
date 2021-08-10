@@ -16,7 +16,7 @@ export function Footer() {
         </div>
         <div className={styles.contact__btn__container}>
           <button className={ styles.email__btn } type="button">
-            <img src="/images/email.svg" alt="email" />
+            <img src="/public/images/email.svg" alt="email" />
 
             <p>ENTRAR EM CONTATO</p>
           </button>

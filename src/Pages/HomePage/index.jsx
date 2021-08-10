@@ -1,7 +1,5 @@
 import React from 'react';
 
-import styles from './style.module.scss';
-
 import {UserProvider} from '../../Context/UserProvider';
 
 import {Hero} from '../../Components/Hero';

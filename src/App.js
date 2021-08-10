@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/MyPortifolio">
       <Switch>
         <Route path="/" exact component={ HomePage }/>
       </Switch>

@@ -2,8 +2,6 @@ import React, { useContext } from 'react';
 
 import UserContext from '../../Context/UserContext';
 
-import { Link } from 'react-router-dom';
-
 import styles from './style.module.scss';
 
 import hamburgerImg from '../../images/hamburger.svg';

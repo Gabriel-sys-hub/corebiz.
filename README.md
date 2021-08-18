@@ -14,7 +14,6 @@
 ### 🛠 Tecnologias
 
 - [React](https://pt-br.reactjs.org/)
-- ContextAPI
 - [React Elastic Carousel](https://www.npmjs.com/package/react-elastic-carousel)
 - Fetch ( Requisição de API )
 - [SASS](https://sass-lang.com/)
@@ -26,12 +25,14 @@
 - [x] Validação de email e nome
 - [x] Adicionar itens ao carrinho de compras
 - [x] Requisição de API de produtos
+- [x] Rater, onde cada produto tem o seu numero de estrelas
 ---
 
-# Organização do SCSS
+### Organização do SCSS
 
-- Cada pasta com seu style.module
-- Uma global.css. Para configurações globais e variaveis de cores
+- Cada pasta com seu style.module;
+- Usando CSS normal dentro das pastas pra modificar elementos do carousel; 
+- Uma global.css. Para configurações globais e variaveis de cores;
 
 ---
 
@@ -54,35 +55,35 @@ $ cd corebiz
 # Instale as dependências
 $ npm install
 
+# Instale as dependencias extras necessarias
+$ npm install -g sass
+$ npm install --save react-star-ratings
+$ npm install --save react-elastic-carousel
+
 # Execute a aplicação
 $ npm start
 
 ```
+
+
+```bash
+# Clone este repositório
+$ git clone git@github.com:Gabriel-sys-hub/corebiz..git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd corebiz
+
+# Instale as dependências
+$ yarn
+
+# Instale as dependencias extras necessarias
+$ yarn -g sass
+$ yarn --save react-star-ratings
+$ yarn --save react-elastic-carousel
+
+# Execute a aplicação
+$ yarn start
+
+```
 ---
-#  Missão
-
-Desenvolver uma página baseando-se no layout e APIs abaixo.
-
-**Link do layout:** 
-https://www.figma.com/file/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge
----
-**Link das APIs:** 
-https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
----
-
-### Passo 1
--  Use a API de produtos para pegar os dados dos produtos e construir a vitrine.
--  Ao clicar no botão “Comprar” deve ser incrementada a quantidade de itens no carrinho.
--  Ao atualizar a página, a quantidade de produtos no carrinho deve serpreservada.
-
-
-### Passo 2
--  Crie validações para o form de contato. (Ex: se o e-mail for inválido ou o nome vazio)
--  Ao clicar em enviar com os campos validados, o form precisa ser disparado via javascript para a API de newsletter seguindo as especificações da API.
-
----
-
-### Implementações ainda não completas
-
-- Rater (Parte onde fica as estrelas de cada item), tive um problema com a biblioteca e ainda não consegui resolver
   

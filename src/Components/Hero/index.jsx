@@ -34,7 +34,7 @@ export function Hero() {
                   Criar ou migrar seu e-commerce?
                 </p>
             </h1>
-            <img src="/images/Banner.png" alt="banner" />
+            <img src={ bannerImage } alt="banner" />
           </div>
         </Carousel>
     </div>

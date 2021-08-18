@@ -5,6 +5,8 @@ import './style.css';
 
 import Carousel from "react-elastic-carousel";
 
+import StarRatings from 'react-star-ratings';
+
 import styles from './style.module.scss';
 
 
@@ -22,10 +24,17 @@ export function CarouselItem() {
     const cartList = productsApi.map((product) => (
       <div className={ styles.card__container } key={product.productId}>
         {product.listPrice > product.price ? (
-          <p className={ styles.off__card }>OFF</p>
+          <p className={ styles.off__card } />
         ) : null}
         <img alt={`foto ${product.productName}`} src={product.imageUrl} />
-
+        <StarRatings
+          rating={product.stars}
+          starRatedColor="red"
+          numberOfStars={5}
+          name='rating'
+          starDimension="15px"
+          starSpacing="1px"
+        />
         <div className={ styles.detail__container }>
           <p className={ styles.product__name }>
             {product.productName}

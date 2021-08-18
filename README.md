@@ -3,6 +3,7 @@
 - [React](https://pt-br.reactjs.org/)
 - [React Elastic Carousel](https://www.npmjs.com/package/react-elastic-carousel)
 - Fetch ( Requisição de API )
+- [React-Star-Rating](https://github.com/ekeric13/react-star-ratings) 
 - [SASS](https://sass-lang.com/)
 
 ---

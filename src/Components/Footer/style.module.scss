@@ -76,6 +76,29 @@
       }
     }
   }
+  .logo__container {
+    align-items: center;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+
+    .corebiz__logo {
+      margin: 20px;
+      p {
+        color: var(--white);
+        font-size: 0.5rem;
+      }
+    }
+
+    .vtex__logo {
+      margin: 20px;
+      p {
+        color: var(--white);
+        font-size: 0.5rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 728px) {

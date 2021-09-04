@@ -21,6 +21,10 @@ a, ul, li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 :root {
   --white: #FFF;
   --background-color: #E5E5E5;

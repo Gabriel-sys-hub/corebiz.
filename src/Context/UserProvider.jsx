@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 import PropTypes from 'prop-types';
 
@@ -19,34 +19,30 @@ export function UserProvider({ children }) {
     setProductsContext();
   }, []);
 
-  useEffect(() => {
-    if (localStorage.getItem('userCart')) {
-      const userCartSaved = JSON.parse(localStorage.getItem('userCart'));
-      handlePurchaseUserCart(userCartSaved)
-    }
-  }, []);
+  const setCartQuantity = useCallback(
+    () => {
+      if (localStorage.getItem('userCart')) {
+        const userCartSaved = JSON.parse(localStorage.getItem('userCart'));
+        handlePurchaseUserCart(userCartSaved)
+      }
+      setTotalProductsCart(userCart.length);
+    },
+    [userCart.length],
+  )
 
   useEffect(() => {
-    setTotalProductsCart(Number(userCart.reduce((acc, { quantity }) => acc + quantity, 0)));
-  }, [userCart]);
+    setCartQuantity();
+  }, [setCartQuantity]);
 
   function setProductsCart(newProduct) {
     if (userCart.length === 0) {
       const newCart = {...newProduct, quantity: 1}
-      handlePurchaseUserCart([newCart]);
-      localStorage.setItem('userCart', JSON.stringify(newCart))
-      return;
-    }
-    if (userCart.some(({ productId }) => productId === newProduct.productId)) {
-      const newCart = userCart.map((products) => (
-        products.productId === newProduct.productId ? {...products, quantity: Number(products.quantity) + 1} : products
-      ));
-      handlePurchaseUserCart(newCart);
+      handlePurchaseUserCart([...userCart, newCart]);
       localStorage.setItem('userCart', JSON.stringify(newCart))
       return;
     }
     handlePurchaseUserCart([...userCart, {...newProduct, quantity: 1}]);
-    localStorage.setItem('userCart', JSON.stringify([...userCart, {...newProduct, quantity: 1}]))
+    localStorage.setItem('userCart', JSON.stringify([...userCart, {...newProduct, quantity: 1}]))   
   }
 
   const context = {

@@ -56,19 +56,20 @@ export function CarouselItem() {
               ).toFixed(2)}`}
             </p>
           ) : null}
-          <input
+          <button
             type="button"
-            value="Comprar"
             className={ styles.product__buy__btn }
             onClick={() => setProductsCart(product)}
-          />
+          >
+            Comprar
+          </button>
         </div>
       </div>
     ));
     return (
       <Carousel breakPoints={breakPoints}>
         {cartList.map((item) => (
-          <div> {item} </div>
+          <div key={item.productID}> {item} </div>
         ))}
       </Carousel>
     );

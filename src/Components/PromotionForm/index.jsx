@@ -74,7 +74,8 @@ export function PromotionForm() {
           onChange={({target}) => handleChangeInput(target)}
           className={ styles.promotion__input }
           name="name"
-          type="text"placeholder="Digite seu nome"
+          type="text"
+          placeholder="Digite seu nome"
         />
         <input
           onChange={({target}) => handleChangeInput(target)}
@@ -83,13 +84,14 @@ export function PromotionForm() {
           type="email"
           placeholder="Digite seu email"
         />
-        <input
+        <button
           onClick={() => submitForm()}
           disabled={ disabled }
           className={ styles.promotion__btn }
           type="button"
-          value="Eu quero!"
-        />
+        >
+          Eu quero
+        </button>
       </form>
     </section>)
   );
